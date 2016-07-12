@@ -1,0 +1,9 @@
+version: '2'
+services:
+  ubunturspec:
+    hostname: ubuntu-watir
+    container_name: ubuntu
+    build: .
+    image: ubuntu
+    ports:
+      - "8080:8080"
