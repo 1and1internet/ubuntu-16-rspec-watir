@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 COPY files/ /
 RUN \
   apt-get -y update && \
-  apt-get -y install xvfb ruby ruby-rspec ruby-ffi git firefox=45.0.2+build1-0ubuntu1 && \
+  apt-get -y install xvfb ruby ruby-rspec ruby-ffi git firefox && \
   gem install watir watir-ng headless && \
   locale-gen en_GB.utf8 && \
   apt-get -y clean && \
